@@ -1,0 +1,26 @@
+{
+  "name": "version-1-extension",
+  "version": "0.0.1",
+  "description": "Make Version 1 more compact",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx ce"
+  },
+  "keywords": [],
+  "author": "Adam Quinton",
+  "license": "MIT",
+  "dependencies": {
+    "ce": "^0.0.1"
+  },
+  "devDependencies": {
+    "create-extension-cli": "0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvakanaka/version-1-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zvakanaka/version-1-extension/issues"
+  },
+  "homepage": "https://github.com/zvakanaka/version-1-extension#readme"
+}

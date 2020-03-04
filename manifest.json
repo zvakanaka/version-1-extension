@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Version 1 Extension",
+  "description": "Make Version 1 more compact",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www5.v1host.com/FH-V1/TeamRoom.mvc*"
+      ],
+      "js": [
+        "dist/content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
