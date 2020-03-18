@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Version 1 Extension",
   "description": "Make Version 1 more compact",
-  "version": "0.1",
+  "version": "0.2",
   "content_scripts": [
     {
       "matches": [

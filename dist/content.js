@@ -1,10 +1,10 @@
-console.log('Version 1 Extension extension Loaded (v0.1)');
+console.log('Version 1 Extension extension Loaded (v0.2)');
   
   // JavaScript
   const script = document.createElement('script');
   script.textContent = `
 /*******************************************************************************
- * JS source file '/Users/qui10001/dev/create-extension/build/lib/../../client/utils.js'
+ * JS source file 'utils.js' (helper from create-extension)
  ******************************************************************************/
 function timeout(ms) { return new Promise(r => setTimeout(r, ms)); }
 
