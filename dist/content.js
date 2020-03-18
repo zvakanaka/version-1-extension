@@ -1,10 +1,12 @@
 console.log('Version 1 Extension extension Loaded (v0.1)');
+  
+  // JavaScript
   const script = document.createElement('script');
   script.textContent = `
-  /*******************************************************************************
-   * source file '/Users/qui10001/dev/create-extension/build/../client/utils.js'
-   ******************************************************************************/
-  function timeout(ms) { return new Promise(r => setTimeout(r, ms)); }
+/*******************************************************************************
+ * JS source file '/Users/qui10001/dev/create-extension/build/lib/../../client/utils.js'
+ ******************************************************************************/
+function timeout(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 /*
  * USAGE:
@@ -81,18 +83,22 @@ async function fetchHtml(url, options, useCache = false) { // cache response and
 
 function cleanBody(bodyString) {
   const bodyClean = bodyString
-    .replace(/<script/g, '<scmipt')
+    .replace(/<script/g, '<smcript')
     .replace(/<img /g, '<smimg ')
     .replace(/<iframe/g, '<smiframe')
-    .replace(/<style/g, '<smyle');
+    .replace(/<style/g, '<smtyle');
   return bodyClean;
 }
-
-  /*******************************************************************************
-   * source file 'src/js/content.js' (wrapped in IIFE)
-   ******************************************************************************/
-  (function() {
-  const styleStr = css\`
+`;
+  document.head.append(script);
+  
+  
+  // CSS
+  const style = document.createElement('style');
+  style.textContent = `
+/*******************************************************************************
+ * CSS source file 'src/css/main.css'
+ ******************************************************************************/
 td.status.row-cell {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -101,11 +107,7 @@ td.status.row-cell {
 .task-card {
   width: unset;
 }
-\`;
-const style = document.createElement('style');
-style.textContent = styleStr;
-document.head.appendChild(style);
-
-  })();`;
-  document.head.append(script);
+`;
+  document.head.appendChild(style);
+  
   

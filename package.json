@@ -1,6 +1,6 @@
 {
   "name": "version-1-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make Version 1 more compact",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,8 @@
   "keywords": [],
   "author": "Adam Quinton",
   "license": "MIT",
-  "dependencies": {
-    "ce": "^0.0.1"
-  },
   "devDependencies": {
-    "create-extension-cli": "0.0.1"
+    "create-extension-cli": "0.1.0"
   },
   "repository": {
     "type": "git",
